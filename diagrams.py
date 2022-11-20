@@ -11,3 +11,5 @@ for i in config['result']:
     dot.node(i['id'],i['pipeline'], shape='box')
     if 'connection' in i.keys():
         dot.edge(i['connection'],i['id'])
+       
+dot.render(outfile=f'/opt/snaplogic/diagrams/{sys.argv[2]}.png')
