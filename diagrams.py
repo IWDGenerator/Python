@@ -12,4 +12,4 @@ for i in config['result']:
     if 'connection' in i.keys():
         dot.edge(i['connection'],i['id'])
 
-dot.render(outfile=f'/opt/snaplogic/diagrams/{sys.argv[2]}.png')
+#dot.render(outfile=f'/opt/snaplogic/diagrams/{sys.argv[2]}.png')
